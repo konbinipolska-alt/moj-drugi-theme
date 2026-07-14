@@ -9,25 +9,50 @@
  */
 {
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
+    "hero_typo": {
+      "type": "section",
+      "name": "Hero",
       "blocks": {
-        "text_YLPk4p": {
+        "kicker": {
           "type": "text",
-          "name": "t:names.heading",
+          "name": "Kicker",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<p>コンビニ</p>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h1>Smaki Japonii i Korei</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -38,57 +63,192 @@
           },
           "blocks": {}
         },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
+        "sub": {
+          "type": "text",
+          "name": "Subheading",
           "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "rgba(0, 0, 0, 0)",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
+            "text": "<p>Z dostawą lub stacjonarnie — Wrocław, ul. Szybka 1b/B</p>",
             "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "cta_group": {
+          "type": "group",
+          "name": "CTA",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "gap": 12,
+            "width": "fit-content"
+          },
+          "blocks": {
+            "btn_market": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "Market",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "btn_zupoteka": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "Zupoteka & Szybka micha",
+                "link": "shopify://collections/zupoteka",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "btn_market",
+            "btn_zupoteka"
+          ]
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "kicker",
+        "heading",
+        "sub",
+        "cta_group"
       ],
-      "name": "t:names.hero",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "link": "",
-        "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
         "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "section_height": "auto",
+        "background_media": "none",
+        "padding-block-start": 96,
+        "padding-block-end": 96
       }
     },
-    "product_list_fa6P9H": {
+    "market_grid": {
+      "type": "collection-list",
+      "name": "Market grid",
+      "blocks": {
+        "grid_header": {
+          "type": "group",
+          "name": "Header",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "gap": 12,
+            "width": "fill"
+          },
+          "blocks": {
+            "grid_title": {
+              "type": "text",
+              "name": "Heading",
+              "settings": {
+                "text": "<h2>Market</h2>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "grid_all": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "Wszystkie produkty",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "grid_title",
+            "grid_all"
+          ]
+        }
+      },
+      "block_order": [
+        "grid_header"
+      ],
+      "settings": {
+        "collection_list": [
+          "herbata",
+          "kawa",
+          "nudle-i-kluchy",
+          "slodycze-i-przekaski",
+          "dodatki-i-pasty",
+          "ryz",
+          "octy-i-oleje",
+          "przydasie-i-tentegi"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 8,
+        "rows_gap": 24,
+        "max_collections": 8,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },
+    "list_zupoteka": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -152,7 +312,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "Zobacz wszystko",
                 "open_in_new_tab": false,
                 "style_class": "button-unstyled",
                 "width": "fit-content",
@@ -256,9 +416,195 @@
       },
       "name": "t:names.featured_collection",
       "settings": {
-        "collection": "all",
+        "collection": "zupoteka",
         "layout_type": "grid",
-        "carousel_on_mobile": false,
+        "carousel_on_mobile": true,
+        "max_products": 8,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "list_slodycze": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_YFtzcL": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_MWeP9V": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "Zobacz wszystko",
+                "open_in_new_tab": false,
+                "style_class": "button-unstyled",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_YFtzcL",
+            "product_list_button_MWeP9V"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 4,
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_677WP3": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_YXxMTj": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_JQzVV4": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_677WP3",
+            "product_title_YXxMTj",
+            "price_JQzVV4"
+          ]
+        }
+      },
+      "name": "t:names.featured_collection",
+      "settings": {
+        "collection": "slodycze-i-przekaski",
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
@@ -276,7 +622,9 @@
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "hero_typo",
+    "market_grid",
+    "list_zupoteka",
+    "list_slodycze"
   ]
 }
