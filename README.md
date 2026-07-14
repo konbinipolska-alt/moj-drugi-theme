@@ -1,3 +1,20 @@
+# KONBINI 2.0
+
+Custom Shopify theme for **[KONBINI.pl](https://konbini.pl)** — wabi-sabi Japanese
+minimalism, mobile-first, agentic-commerce ready. Forked from
+[Shopify/horizon](https://github.com/Shopify/horizon) at v4.1.1 (`upstream-base-68760d9`).
+
+- Conventions and hard rules: [`CLAUDE.md`](CLAUDE.md)
+- Architecture, tokens, blocks, metafields, i18n, structured data, upstream sync: [`docs/`](docs/)
+- KONBINI changelog: [`release-notes-konbini.md`](release-notes-konbini.md)
+
+> **License note:** per Horizon's [license](LICENSE.md), this derived theme is delivered
+> for the KONBINI store only and must not be resold, redistributed, or reused elsewhere.
+
+Original Horizon README follows.
+
+---
+
 # Horizon
 
 [Getting started](#getting-started) |

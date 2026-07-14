@@ -1,0 +1,10 @@
+extends: theme-check:recommended
+
+ignore:
+  - node_modules/**
+
+# KONBINI: all storefront/editor strings must live in locale files.
+MissingTranslation:
+  enabled: true
+TranslationKeyExists:
+  enabled: true

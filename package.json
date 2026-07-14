@@ -1,0 +1,14 @@
+{
+  "name": "konbini-theme",
+  "private": true,
+  "description": "KONBINI 2.0 — custom Shopify theme for konbini.pl (Horizon fork). The theme itself is build-free; these dev dependencies are for formatting only.",
+  "scripts": {
+    "format": "prettier --write \"**/*.liquid\"",
+    "format:check": "prettier --check \"**/*.liquid\"",
+    "check": "shopify theme check"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.9.3",
+    "prettier": "^3.6.0"
+  }
+}

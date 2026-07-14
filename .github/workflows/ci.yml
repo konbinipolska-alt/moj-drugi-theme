@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  theme-check:
+    name: Theme Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run theme-check
+        uses: shopify/theme-check-action@v2
+        with:
+          theme_root: '.'
+
+  lighthouse:
+    name: Lighthouse (mobile)
+    # Runs only on PRs and only once store secrets are configured
+    # (SHOP_STORE + SHOP_ACCESS_TOKEN from a Theme Access app password).
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check secrets
+        id: secrets
+        run: |
+          if [ -n "${{ secrets.SHOP_STORE }}" ] && [ -n "${{ secrets.SHOP_ACCESS_TOKEN }}" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::SHOP_STORE / SHOP_ACCESS_TOKEN secrets not set — skipping Lighthouse."
+          fi
+      - name: Lighthouse CI
+        if: steps.secrets.outputs.available == 'true'
+        uses: shopify/lighthouse-ci-action@v1
+        with:
+          store: ${{ secrets.SHOP_STORE }}
+          access_token: ${{ secrets.SHOP_ACCESS_TOKEN }}
+          product_handle: ${{ secrets.SHOP_PRODUCT_HANDLE }}
+          collection_handle: ${{ secrets.SHOP_COLLECTION_HANDLE }}
+          lhci_min_score_performance: 0.85
+          lhci_min_score_accessibility: 0.95
