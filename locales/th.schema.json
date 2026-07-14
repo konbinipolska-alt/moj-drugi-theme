@@ -1159,11 +1159,32 @@
     },
   "konbini": {
     "names": {
-      "konbini_brand": "แบรนด์ KONBINI"
+      "konbini_brand": "แบรนด์ KONBINI",
+      "spotify": "KONBINI Spotify",
+      "local_store": "KONBINI local store"
     },
     "content": {
       "social_links": "โปรไฟล์โซเชียล",
-      "social_links_info": "ใช้ในข้อมูลที่มีโครงสร้าง (Organization sameAs) เพื่อให้เครื่องมือค้นหาและเอเจนต์ช้อปปิ้ง AI เชื่อมโยงร้านค้ากับโปรไฟล์ได้"
+      "social_links_info": "ใช้ในข้อมูลที่มีโครงสร้าง (Organization sameAs) เพื่อให้เครื่องมือค้นหาและเอเจนต์ช้อปปิ้ง AI เชื่อมโยงร้านค้ากับโปรไฟล์ได้",
+      "spotify_info": "The playlist URL is set once in Theme settings → KONBINI brand.",
+      "local_store_info": "Address and hours are set once in Theme settings → KONBINI brand.",
+      "local_store": "Local store",
+      "local_store_settings_info": "Shared by the local-store blocks and LocalBusiness structured data.",
+      "spotify": "Spotify"
+    },
+    "settings": {
+      "compact_player": "Compact player",
+      "show_heading": "Show heading",
+      "store_street": "Street address",
+      "store_zip": "Postal code",
+      "store_city": "City",
+      "store_hours": "Opening hours",
+      "store_maps_url": "Map link (Google Maps)",
+      "spotify_playlist": "Spotify playlist URL"
+    },
+    "info": {
+      "store_hours": "One line per entry, e.g. “Mon–Fri 10–18”.",
+      "spotify_playlist": "Full link to the playlist on open.spotify.com."
     }
   }
 }

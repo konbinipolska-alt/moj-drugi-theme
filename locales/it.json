@@ -348,5 +348,15 @@
       "default_title": "Titolo predefinito",
       "sticky_add_to_cart": "Barra per l'aggiunta rapida al carrello"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Riproduci la nostra playlist",
+      "iframe_title": "Playlist KONBINI su Spotify"
+    },
+    "local_store": {
+      "heading": "Visita il nostro negozio",
+      "directions": "Indicazioni stradali"
+    }
   }
 }

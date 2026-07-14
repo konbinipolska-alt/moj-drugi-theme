@@ -348,5 +348,15 @@
       "default_title": "Titlu implicit",
       "sticky_add_to_cart": "Bara de adăugare rapidă în coș"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Redă playlistul nostru",
+      "iframe_title": "Playlistul KONBINI pe Spotify"
+    },
+    "local_store": {
+      "heading": "Vizitează magazinul nostru",
+      "directions": "Vezi pe hartă"
+    }
   }
 }

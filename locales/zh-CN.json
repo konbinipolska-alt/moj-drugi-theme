@@ -341,5 +341,15 @@
       "success_moderated": "评论已发布，等待审核",
       "success": "评论已发布"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "播放我们的歌单",
+      "iframe_title": "KONBINI 在 Spotify 上的歌单"
+    },
+    "local_store": {
+      "heading": "欢迎光临我们的门店",
+      "directions": "查看地图"
+    }
   }
 }

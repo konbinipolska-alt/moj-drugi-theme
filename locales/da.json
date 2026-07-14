@@ -341,5 +341,15 @@
       "success_moderated": "Kommentaren blev indsendt og afventer moderering",
       "success": "Kommentaren blev indsendt"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Afspil vores playliste",
+      "iframe_title": "KONBINI-playliste på Spotify"
+    },
+    "local_store": {
+      "heading": "Besøg vores butik",
+      "directions": "Find vej"
+    }
   }
 }

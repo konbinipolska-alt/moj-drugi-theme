@@ -355,5 +355,15 @@
       "success_moderated": "Komentář odeslán, čeká na schválení",
       "success": "Komentář zveřejněn"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Pusťte si náš playlist",
+      "iframe_title": "Playlist KONBINI na Spotify"
+    },
+    "local_store": {
+      "heading": "Navštivte naši prodejnu",
+      "directions": "Zobrazit na mapě"
+    }
   }
 }

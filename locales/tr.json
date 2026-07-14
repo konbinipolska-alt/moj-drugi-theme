@@ -341,5 +341,15 @@
       "default_title": "Varsayılan Başlık",
       "sticky_add_to_cart": "Sepete hızlı ekle çubuğu"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Çalma listemizi oynat",
+      "iframe_title": "Spotify'da KONBINI çalma listesi"
+    },
+    "local_store": {
+      "heading": "Mağazamızı ziyaret edin",
+      "directions": "Yol tarifi al"
+    }
   }
 }

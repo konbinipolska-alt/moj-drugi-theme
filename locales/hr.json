@@ -348,5 +348,15 @@
       "success_moderated": "Komentar je objavljen, čeka moderiranje",
       "success": "Komentar objavljen"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Pustite našu playlistu",
+      "iframe_title": "KONBINI playlista na Spotifyju"
+    },
+    "local_store": {
+      "heading": "Posjetite našu trgovinu",
+      "directions": "Prikaži na karti"
+    }
   }
 }

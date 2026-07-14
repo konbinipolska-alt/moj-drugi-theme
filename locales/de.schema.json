@@ -1159,11 +1159,32 @@
     },
   "konbini": {
     "names": {
-      "konbini_brand": "KONBINI-Marke"
+      "konbini_brand": "KONBINI-Marke",
+      "spotify": "KONBINI Spotify",
+      "local_store": "KONBINI local store"
     },
     "content": {
       "social_links": "Soziale Profile",
-      "social_links_info": "Wird in strukturierten Daten (Organization sameAs) verwendet, damit Suchmaschinen und KI-Shopping-Agenten den Shop mit seinen Profilen verknüpfen können."
+      "social_links_info": "Wird in strukturierten Daten (Organization sameAs) verwendet, damit Suchmaschinen und KI-Shopping-Agenten den Shop mit seinen Profilen verknüpfen können.",
+      "spotify_info": "The playlist URL is set once in Theme settings → KONBINI brand.",
+      "local_store_info": "Address and hours are set once in Theme settings → KONBINI brand.",
+      "local_store": "Local store",
+      "local_store_settings_info": "Shared by the local-store blocks and LocalBusiness structured data.",
+      "spotify": "Spotify"
+    },
+    "settings": {
+      "compact_player": "Compact player",
+      "show_heading": "Show heading",
+      "store_street": "Street address",
+      "store_zip": "Postal code",
+      "store_city": "City",
+      "store_hours": "Opening hours",
+      "store_maps_url": "Map link (Google Maps)",
+      "spotify_playlist": "Spotify playlist URL"
+    },
+    "info": {
+      "store_hours": "One line per entry, e.g. “Mon–Fri 10–18”.",
+      "spotify_playlist": "Full link to the playlist on open.spotify.com."
     }
   }
 }

@@ -341,5 +341,15 @@
       "default_title": "預設標題",
       "sticky_add_to_cart": "快速加入購物車列"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "播放我們的播放清單",
+      "iframe_title": "KONBINI 在 Spotify 上的播放清單"
+    },
+    "local_store": {
+      "heading": "歡迎光臨我們的門市",
+      "directions": "查看地圖"
+    }
   }
 }

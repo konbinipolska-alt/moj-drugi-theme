@@ -24,3 +24,22 @@ Changelog for KONBINI-specific changes. Upstream Horizon changes live in `releas
   cobalt primary buttons (hover verified — no contrast flip), Lora headings over Inter body.
 - Organization + WebSite/SearchAction JSON-LD on home page; KONBINI settings group
   (social profiles for `sameAs`) translated across all 20 schema locales.
+
+### Phase 2 — Header/nav + footer
+- Hybrid navigation on new admin menu `konbini-main` (live store's menu untouched):
+  Market (full mega menu) + promoted Zupoteka & Szybka micha, Słodycze i przekąski,
+  Dla ciała i ducha, Mystery Box. Footer SEO menu `konbini-categories`.
+- Per-category mega menu media: collection metafield `konbini.menu_media`
+  (text / collection_images / featured_products / featured_collections) read via a
+  fenced override in `blocks/_header-menu.liquid`; global default = text (wabi-sabi).
+- Rotating announcement bar (3 messages, PL).
+- New blocks: `konbini-spotify` (click-to-load playlist embed facade, CWV-safe;
+  plain-custom-element per upstream accordion-custom precedent) and
+  `konbini-local-store` (address/hours from KONBINI settings) — both also fenced
+  into the mobile nav drawer (`snippets/header-drawer.liquid`).
+- Footer recomposed: brand note (コンビニ), categories + info menus, PL newsletter,
+  local store + Spotify; light paper background.
+- Store JSON-LD node (LocalBusiness-style) added to the Organization graph,
+  fed by the same local-store settings.
+- Storefront strings translated across all 31 locales; editor labels EN+PL
+  (other editor languages fall back to English — documented).

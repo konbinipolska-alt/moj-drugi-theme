@@ -355,5 +355,15 @@
       "default_title": "Название по умолчанию",
       "sticky_add_to_cart": "Быстрое добавление в корзину"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Включите наш плейлист",
+      "iframe_title": "Плейлист KONBINI в Spotify"
+    },
+    "local_store": {
+      "heading": "Посетите наш магазин",
+      "directions": "Показать на карте"
+    }
   }
 }

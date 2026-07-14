@@ -1,0 +1,56 @@
+{% doc %}
+  KONBINI local store block — merchant-addable wrapper around the
+  konbini-local-store snippet. Address/hours live in theme settings
+  (KONBINI brand group), shared with LocalBusiness JSON-LD.
+{% enddoc %}
+<div class="konbini-local-store-block spacing-style" style="{% render 'spacing-style', settings: block.settings %}">
+  {% render 'konbini-local-store', show_heading: block.settings.show_heading %}
+</div>
+
+{% schema %}
+{
+  "name": "t:konbini.names.local_store",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:konbini.content.local_store_info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "t:konbini.settings.show_heading",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:konbini.names.local_store",
+      "category": "t:categories.custom"
+    }
+  ]
+}
+{% endschema %}

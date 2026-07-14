@@ -39,6 +39,29 @@
         {%- endif %}
         "email": {{ shop.email | json }}
       },
+      {%- if settings.konbini_store_street != blank %}
+        {
+          "@type": "Store",
+          "@id": "{{ shop.url }}#local-store",
+          "name": {{ shop.name | json }},
+          "parentOrganization": { "@id": "{{ shop.url }}#organization" },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": {{ settings.konbini_store_street | json }},
+            {%- if settings.konbini_store_zip != blank %}
+              "postalCode": {{ settings.konbini_store_zip | json }},
+            {%- endif %}
+            {%- if settings.konbini_store_city != blank %}
+              "addressLocality": {{ settings.konbini_store_city | json }},
+            {%- endif %}
+            "addressCountry": "PL"
+          }
+          {%- if settings.konbini_store_maps_url != blank -%}
+            ,
+            "hasMap": {{ settings.konbini_store_maps_url | json }}
+          {%- endif %}
+        },
+      {%- endif %}
       {
         "@type": "WebSite",
         "@id": "{{ shop.url }}#website",

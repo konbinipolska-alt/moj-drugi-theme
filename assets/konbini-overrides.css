@@ -35,6 +35,22 @@
 }
 
 /* ---------------------------------------------------------------------
+   Nav drawer extras (local store + Spotify) — markup fenced into
+   snippets/header-drawer.liquid.
+   --------------------------------------------------------------------- */
+
+.konbini-drawer-extras {
+  display: grid;
+  gap: var(--k-space-3);
+  padding-block: var(--k-space-3);
+  border-top: 1px solid var(--k-color-mist);
+}
+
+.konbini-drawer-extras:not(:has(> *)) {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
    Motion restraint — wabi-sabi micro-interactions use the shared easing.
    Respect users who opt out of motion.
    --------------------------------------------------------------------- */

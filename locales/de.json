@@ -341,5 +341,15 @@
       "success_moderated": "Kommentar gepostet, Moderation ausstehend",
       "success": "Kommentar gepostet"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Unsere Playlist abspielen",
+      "iframe_title": "KONBINI-Playlist auf Spotify"
+    },
+    "local_store": {
+      "heading": "Besuchen Sie unser Geschäft",
+      "directions": "Route anzeigen"
+    }
   }
 }

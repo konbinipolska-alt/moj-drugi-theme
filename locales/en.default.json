@@ -369,5 +369,15 @@
       "default_title": "Default Title",
       "sticky_add_to_cart": "Quick add to cart bar"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Play our playlist",
+      "iframe_title": "KONBINI playlist on Spotify"
+    },
+    "local_store": {
+      "heading": "Visit our store",
+      "directions": "Get directions"
+    }
   }
 }

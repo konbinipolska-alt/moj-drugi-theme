@@ -341,5 +341,15 @@
       "default_title": "Standardtitel",
       "sticky_add_to_cart": "Fält för att lägga till snabbt i varukorgen"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Spela vår spellista",
+      "iframe_title": "KONBINI-spellista på Spotify"
+    },
+    "local_store": {
+      "heading": "Besök vår butik",
+      "directions": "Visa vägen"
+    }
   }
 }
