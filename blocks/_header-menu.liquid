@@ -152,6 +152,14 @@
                       image_border_radius: image_border_radius
                     %}
                   </div>
+                  {% comment %} KONBINI:start — local store + Spotify strip in the first (Market) mega panel {% endcomment %}
+                  {% if forloop.first %}
+                    <div class="konbini-mega-extras">
+                      {% render 'konbini-local-store', show_heading: true %}
+                      {% render 'konbini-spotify', compact: true %}
+                    </div>
+                  {% endif %}
+                  {% comment %} KONBINI:end {% endcomment %}
                 </div>
               </div>
             </div>

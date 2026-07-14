@@ -51,6 +51,38 @@
 }
 
 /* ---------------------------------------------------------------------
+   Mega menu extras strip (local store + Spotify) — markup fenced into
+   blocks/_header-menu.liquid, first (Market) panel only.
+   --------------------------------------------------------------------- */
+
+.konbini-mega-extras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--k-space-2) var(--k-space-4);
+  margin-top: var(--k-space-3);
+  padding-block: var(--k-space-2);
+  border-top: 1px solid var(--k-color-mist);
+  /* the mega panel scrolls internally — keep the strip always visible */
+  position: sticky;
+  bottom: 0;
+  background: var(--k-color-paper);
+}
+
+.konbini-mega-extras .konbini-local-store {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--k-space-3);
+  row-gap: var(--k-space-1);
+}
+
+.konbini-mega-extras:not(:has(> *)) {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
    Motion restraint — wabi-sabi micro-interactions use the shared easing.
    Respect users who opt out of motion.
    --------------------------------------------------------------------- */
