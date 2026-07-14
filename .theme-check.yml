@@ -8,3 +8,20 @@ MissingTranslation:
   enabled: true
 TranslationKeyExists:
   enabled: true
+
+# Baseline: pre-existing offenses in upstream Horizon files (fork point
+# upstream-base-68760d9). We do not fix upstream code — it would hurt
+# merge-ability. Revisit this list on every upstream sync.
+RemoteAsset:
+  ignore:
+    - layout/password.liquid
+    - layout/theme.liquid
+UnclosedHTMLElement:
+  ignore:
+    - snippets/bento-grid.liquid
+UniqueStaticBlockId:
+  ignore:
+    - sections/product-list.liquid
+    - sections/main-cart.liquid
+    - sections/collection-links.liquid
+    - sections/header.liquid
