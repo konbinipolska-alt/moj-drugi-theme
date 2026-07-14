@@ -357,6 +357,10 @@
     "local_store": {
       "heading": "Visita il nostro negozio",
       "directions": "Indicazioni stradali"
+    },
+    "breadcrumbs": {
+      "label": "Percorso di navigazione",
+      "home": "Home"
     }
   }
 }

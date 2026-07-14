@@ -357,6 +357,10 @@
     "local_store": {
       "heading": "Visitez notre boutique",
       "directions": "Itinéraire"
+    },
+    "breadcrumbs": {
+      "label": "Fil d’Ariane",
+      "home": "Accueil"
     }
   }
 }

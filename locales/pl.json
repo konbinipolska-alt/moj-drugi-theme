@@ -364,6 +364,10 @@
     "local_store": {
       "heading": "Wpadnij do nas",
       "directions": "Zobacz na mapie"
+    },
+    "breadcrumbs": {
+      "label": "Ścieżka nawigacji",
+      "home": "Strona główna"
     }
   }
 }

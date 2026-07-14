@@ -364,6 +364,10 @@
     "local_store": {
       "heading": "Apsilankykite mūsų parduotuvėje",
       "directions": "Rodyti žemėlapyje"
+    },
+    "breadcrumbs": {
+      "label": "Naršymo kelias",
+      "home": "Pradžia"
     }
   }
 }

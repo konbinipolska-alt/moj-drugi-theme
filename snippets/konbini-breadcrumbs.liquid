@@ -1,0 +1,113 @@
+{% doc %}
+  Semantic breadcrumbs + BreadcrumbList JSON-LD (docs/05-structured-data.md).
+  Horizon ships no breadcrumbs — this is a KONBINI addition (UX + SEO/agents).
+  Renders on collection and product pages; on products it routes through the
+  collection the visitor navigated from when available.
+
+  @param {string} context - 'collection' or 'product'
+  @param {collection} [collection] - the collection (context: 'collection')
+  @param {product} [product] - the product (context: 'product')
+{% enddoc %}
+{%- liquid
+  assign crumb_collection = blank
+  if context == 'collection'
+    assign crumb_collection = collection
+  elsif context == 'product'
+    assign crumb_collection = product.collections.first
+  endif
+-%}
+{%- if context == 'collection' or context == 'product' -%}
+  <nav class="konbini-breadcrumbs" aria-label="{{ 'konbini.breadcrumbs.label' | t }}">
+    <ol class="konbini-breadcrumbs__list">
+      <li>
+        <a href="{{ routes.root_url }}">{{ 'konbini.breadcrumbs.home' | t }}</a>
+      </li>
+      {%- if crumb_collection != blank and crumb_collection.handle != 'frontpage' -%}
+        <li>
+          <a href="{{ crumb_collection.url }}" {% if context == 'collection' %}aria-current="page"{% endif %}>
+            {{- crumb_collection.title -}}
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if context == 'product' -%}
+        <li>
+          <span aria-current="page">{{ product.title }}</span>
+        </li>
+      {%- endif -%}
+    </ol>
+  </nav>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": {{ 'konbini.breadcrumbs.home' | t | json }},
+          "item": {{ shop.url | append: routes.root_url | json }}
+        }
+        {%- if crumb_collection != blank and crumb_collection.handle != 'frontpage' -%}
+          ,
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ crumb_collection.title | json }},
+            "item": {{ shop.url | append: crumb_collection.url | json }}
+          }
+        {%- endif -%}
+        {%- if context == 'product' -%}
+          ,
+          {
+            "@type": "ListItem",
+            {%- if crumb_collection != blank and crumb_collection.handle != 'frontpage' %}
+              "position": 3,
+            {%- else %}
+              "position": 2,
+            {%- endif %}
+            "name": {{ product.title | json }},
+            "item": {{ shop.url | append: product.url | json }}
+          }
+        {%- endif -%}
+      ]
+    }
+  </script>
+{%- endif -%}
+
+{% stylesheet %}
+  .konbini-breadcrumbs {
+    padding-block: var(--k-space-2);
+  }
+  .konbini-breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--k-space-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8125rem;
+  }
+  .konbini-breadcrumbs__list li {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--k-space-1);
+    color: color-mix(in oklab, currentColor 72%, transparent);
+  }
+  .konbini-breadcrumbs__list li + li::before {
+    content: '›';
+    color: color-mix(in oklab, currentColor 45%, transparent);
+  }
+  .konbini-breadcrumbs__list a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .konbini-breadcrumbs__list a:hover {
+    color: var(--k-color-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .konbini-breadcrumbs__list [aria-current='page'] {
+    color: var(--k-color-sumi);
+  }
+{% endstylesheet %}

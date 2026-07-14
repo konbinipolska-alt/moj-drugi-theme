@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "มาเยี่ยมร้านของเรา",
       "directions": "ดูแผนที่"
+    },
+    "breadcrumbs": {
+      "label": "เส้นทางนำทาง",
+      "home": "หน้าแรก"
     }
   }
 }

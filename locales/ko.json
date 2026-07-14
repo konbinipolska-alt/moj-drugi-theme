@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "매장에 방문하세요",
       "directions": "길찾기"
+    },
+    "breadcrumbs": {
+      "label": "탐색 경로",
+      "home": "홈"
     }
   }
 }

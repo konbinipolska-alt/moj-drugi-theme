@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Kunjungi toko kami",
       "directions": "Lihat rute"
+    },
+    "breadcrumbs": {
+      "label": "Jejak navigasi",
+      "home": "Beranda"
     }
   }
 }

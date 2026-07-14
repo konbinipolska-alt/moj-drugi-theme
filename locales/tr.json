@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Mağazamızı ziyaret edin",
       "directions": "Yol tarifi al"
+    },
+    "breadcrumbs": {
+      "label": "İçerik haritası",
+      "home": "Ana sayfa"
     }
   }
 }

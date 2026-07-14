@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Besøk butikken vår",
       "directions": "Vis vei"
+    },
+    "breadcrumbs": {
+      "label": "Brødsmulesti",
+      "home": "Hjem"
     }
   }
 }

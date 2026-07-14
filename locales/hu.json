@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Látogass el üzletünkbe",
       "directions": "Útvonal megtekintése"
+    },
+    "breadcrumbs": {
+      "label": "Morzsamenü",
+      "home": "Kezdőlap"
     }
   }
 }
