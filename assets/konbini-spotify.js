@@ -38,3 +38,52 @@ class KonbiniSpotify extends HTMLElement {
 if (!customElements.get('konbini-spotify')) {
   customElements.define('konbini-spotify', KonbiniSpotify);
 }
+
+// Header-bar popover variant: the iframe is server-rendered with
+// loading="lazy" inside a [hidden] panel, so the first open reveals a player
+// that starts loading immediately — no separate "load" click.
+class KonbiniSpotifyNav extends HTMLElement {
+  #controller = new AbortController();
+
+  connectedCallback() {
+    const { signal } = this.#controller;
+    const toggle = this.querySelector('button');
+    const panel = this.querySelector('.konbini-nav-spotify__panel');
+    if (!toggle || !panel) return;
+
+    toggle.addEventListener('click', () => this.#setOpen(panel.hidden), { signal });
+    document.addEventListener(
+      'click',
+      (e) => {
+        if (!panel.hidden && e.target instanceof Node && !this.contains(e.target)) this.#setOpen(false);
+      },
+      { signal }
+    );
+    document.addEventListener(
+      'keydown',
+      (e) => {
+        if (e.key === 'Escape' && !panel.hidden) {
+          this.#setOpen(false);
+          toggle.focus();
+        }
+      },
+      { signal }
+    );
+  }
+
+  disconnectedCallback() {
+    this.#controller.abort();
+  }
+
+  #setOpen(open) {
+    const toggle = this.querySelector('button');
+    const panel = this.querySelector('.konbini-nav-spotify__panel');
+    if (!toggle || !panel) return;
+    panel.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+  }
+}
+
+if (!customElements.get('konbini-spotify-nav')) {
+  customElements.define('konbini-spotify-nav', KonbiniSpotifyNav);
+}
