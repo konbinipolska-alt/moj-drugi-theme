@@ -187,7 +187,7 @@
               "type": "text",
               "name": "Brand note",
               "settings": {
-                "text": "<p><strong>KONBINI</strong> (jap. コンビニ) — mały sklep z wielkim sercem do azjatyckiej kuchni. Online i stacjonarnie przy ul. Szybkiej.</p>",
+                "text": "<p><strong>KONBINI</strong> (jap. コンビニ) — japońsko-koreański sklep z Wrocławia i online. Smaki Japonii i Korei — z dostawą lub stacjonarnie.</p>",
                 "width": "100%",
                 "max_width": "narrow",
                 "alignment": "left"
