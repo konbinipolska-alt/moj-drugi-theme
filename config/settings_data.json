@@ -89,7 +89,18 @@
       "moss": "#3d6b50"
     },
     "palette_primary_button_background": "{{ settings.color_palette.brand }}",
-    "palette_primary_button_text": "{{ settings.color_palette.background }}"
+    "palette_primary_button_text": "{{ settings.color_palette.background }}",
+    "logo": "shopify://shop_images/konbini-logo-kobalt.svg",
+    "konbini_social_instagram": "https://www.instagram.com/konbinipolska/",
+    "konbini_social_facebook": "https://www.facebook.com/konbinipolska",
+    "konbini_social_tiktok": "https://www.tiktok.com/@konbinipolska",
+    "konbini_social_youtube": "https://www.youtube.com/@konbinipolska",
+    "konbini_store_street": "ul. Szybka 1b/B",
+    "konbini_store_zip": "50-421",
+    "konbini_store_city": "Wrocław",
+    "konbini_store_hours": "Wkrótce otwarcie",
+    "konbini_store_note": "Strefa przyjazna zwierzętom 🐾",
+    "konbini_store_maps_url": "https://www.google.com/maps/search/?api=1&query=KONBINI%20ul.%20Szybka%201b%2FB%2C%2050-421%20Wroc%C5%82aw"
   },
   "presets": {
     "KONBINI Wabi-Sabi": {
@@ -173,7 +184,18 @@
         "moss": "#3d6b50"
       },
       "palette_primary_button_background": "{{ settings.color_palette.brand }}",
-      "palette_primary_button_text": "{{ settings.color_palette.background }}"
+      "palette_primary_button_text": "{{ settings.color_palette.background }}",
+      "logo": "shopify://shop_images/konbini-logo-kobalt.svg",
+      "konbini_social_instagram": "https://www.instagram.com/konbinipolska/",
+      "konbini_social_facebook": "https://www.facebook.com/konbinipolska",
+      "konbini_social_tiktok": "https://www.tiktok.com/@konbinipolska",
+      "konbini_social_youtube": "https://www.youtube.com/@konbinipolska",
+      "konbini_store_street": "ul. Szybka 1b/B",
+      "konbini_store_zip": "50-421",
+      "konbini_store_city": "Wrocław",
+      "konbini_store_hours": "Wkrótce otwarcie",
+      "konbini_store_note": "Strefa przyjazna zwierzętom 🐾",
+      "konbini_store_maps_url": "https://www.google.com/maps/search/?api=1&query=KONBINI%20ul.%20Szybka%201b%2FB%2C%2050-421%20Wroc%C5%82aw"
     }
   }
 }

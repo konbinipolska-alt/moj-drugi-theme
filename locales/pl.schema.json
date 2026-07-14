@@ -1180,11 +1180,15 @@
       "store_city": "Miasto",
       "store_hours": "Godziny otwarcia",
       "store_maps_url": "Link do mapy (Google Maps)",
-      "spotify_playlist": "Adres playlisty Spotify"
+      "spotify_playlist": "Adres playlisty Spotify",
+      "store_note": "Dodatkowa notka",
+      "instant_load": "Ładuj odtwarzacz od razu"
     },
     "info": {
       "store_hours": "Jedna linia na wpis, np. „pon.–pt. 10–18”.",
-      "spotify_playlist": "Pełny link do playlisty na open.spotify.com."
+      "spotify_playlist": "Pełny link do playlisty na open.spotify.com.",
+      "store_note": "Wyświetlana pod godzinami, np. informacja o strefie przyjaznej zwierzętom.",
+      "instant_load": "Osadza Spotify przy wczytaniu strony zamiast po kliknięciu. Dokłada zewnętrzny skrypt."
     }
   }
 }

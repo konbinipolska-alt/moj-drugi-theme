@@ -204,7 +204,8 @@
             "spotify": {
               "type": "konbini-spotify",
               "settings": {
-                "compact": true
+                "compact": true,
+                "instant_load": true
               },
               "blocks": {}
             }
@@ -252,10 +253,10 @@
         "social_icons": {
           "type": "social-links",
           "settings": {
-            "facebook_url": "https://www.facebook.com",
-            "instagram_url": "https://www.instagram.com",
-            "youtube_url": "https://www.youtube.com",
-            "tiktok_url": "https://www.tiktok.com",
+            "facebook_url": "https://www.facebook.com/konbinipolska",
+            "instagram_url": "https://www.instagram.com/konbinipolska/",
+            "youtube_url": "https://www.youtube.com/@konbinipolska",
+            "tiktok_url": "https://www.tiktok.com/@konbinipolska",
             "twitter_url": "https://www.twitter.com"
           }
         }

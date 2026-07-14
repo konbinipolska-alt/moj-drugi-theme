@@ -4,7 +4,7 @@
   (KONBINI brand group); this block controls presentation only.
 {% enddoc %}
 <div class="konbini-spotify-block spacing-style" style="{% render 'spacing-style', settings: block.settings %}">
-  {% render 'konbini-spotify', compact: block.settings.compact %}
+  {% render 'konbini-spotify', compact: block.settings.compact, instant: block.settings.instant_load %}
 </div>
 
 {% schema %}
@@ -20,6 +20,13 @@
       "id": "compact",
       "label": "t:konbini.settings.compact_player",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "instant_load",
+      "label": "t:konbini.settings.instant_load",
+      "info": "t:konbini.info.instant_load",
+      "default": false
     },
     {
       "type": "header",
