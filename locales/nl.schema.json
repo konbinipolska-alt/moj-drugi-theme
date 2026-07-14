@@ -1156,5 +1156,14 @@
     "storytelling": "Verhalend",
     "text": "Tekst",
     "blog_post": "Blogpost"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI-merk"
+    },
+    "content": {
+      "social_links": "Sociale profielen",
+      "social_links_info": "Wordt gebruikt in gestructureerde data (Organization sameAs) zodat zoekmachines en AI-winkelagenten de winkel aan zijn profielen kunnen koppelen."
+    }
   }
 }

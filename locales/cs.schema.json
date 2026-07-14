@@ -1156,5 +1156,14 @@
     "storytelling": "Vyprávění",
     "text": "Text",
     "blog_post": "Blogový příspěvek"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "Značka KONBINI"
+    },
+    "content": {
+      "social_links": "Sociální profily",
+      "social_links_info": "Používá se ve strukturovaných datech (Organization sameAs), aby vyhledávače a nákupní AI agenti mohli propojit obchod s jeho profily."
+    }
   }
 }

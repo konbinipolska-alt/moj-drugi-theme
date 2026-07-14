@@ -1156,5 +1156,14 @@
     "storytelling": "ストーリーテリング",
     "text": "テキスト",
     "blog_post": "ブログ記事"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINIブランド"
+    },
+    "content": {
+      "social_links": "ソーシャルプロフィール",
+      "social_links_info": "構造化データ（Organization sameAs）で使用され、検索エンジンやAIショッピングエージェントがストアとプロフィールを関連付けられるようにします。"
+    }
   }
 }

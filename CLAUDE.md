@@ -7,7 +7,8 @@ Custom Shopify theme for **KONBINI.pl** (Polish pan-Asian grocery store), forked
 ## Project identity
 
 - **Design**: wabi-sabi Japanese minimalism. Paper `#ffffff`, ink cobalt `#0b00b5`,
-  generous *ma* (間) whitespace, washi textures, restrained micro-interactions.
+  generous *ma* (間) whitespace, restrained micro-interactions. **No textures**
+  (client decision) — quiet is achieved with space and type, not surface noise.
 - **Tone of voice**: visuals are quiet; Polish copy stays warm and playful
   ("Kluchy", "Zupoteka", "Melanż past" are brand assets, not bugs).
 - **Mobile-first**, CWV/SEO/CRO/a11y are release gates (Lighthouse mobile perf ≥ 85, a11y ≥ 95).

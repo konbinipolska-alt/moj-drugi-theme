@@ -13,3 +13,14 @@ Changelog for KONBINI-specific changes. Upstream Horizon changes live in `releas
   (store API rollout gap; reversible via `scripts/compat-static-color-defaults.sh`).
 - First deploy: unpublished draft theme "KONBINI 2.0 [draft]" (#193815085402),
   verified rendering on the live catalog via `shopify theme dev`.
+
+### Phase 1 — Design foundations
+- KONBINI design tokens (`snippets/konbini-tokens.liquid`): cobalt ink `#0b00b5`,
+  sumi text, complementary accents (kaki `#b23c0e`, moss `#3d6b50`, mist `#efeef9`),
+  *ma* spacing scale, motion tokens. All WCAG-AA verified. No textures (client decision).
+- `assets/konbini-overrides.css`: CJK typography groundwork (`:lang(ja|ko)` stacks,
+  keep-all, latin-scoped tracking/uppercase), reduced-motion support.
+- Palette + preset "KONBINI Wabi-Sabi" in settings: paper/sumi/brand/kaki/moss keys,
+  cobalt primary buttons (hover verified — no contrast flip), Lora headings over Inter body.
+- Organization + WebSite/SearchAction JSON-LD on home page; KONBINI settings group
+  (social profiles for `sameAs`) translated across all 20 schema locales.

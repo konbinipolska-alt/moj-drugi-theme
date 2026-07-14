@@ -1156,5 +1156,14 @@
     "storytelling": "Hikaye anlatımı",
     "text": "Metin",
     "blog_post": "Blog gönderisi"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI markası"
+    },
+    "content": {
+      "social_links": "Sosyal profiller",
+      "social_links_info": "Arama motorlarının ve yapay zekâ alışveriş ajanlarının mağazayı profilleriyle ilişkilendirebilmesi için yapılandırılmış verilerde (Organization sameAs) kullanılır."
+    }
   }
 }

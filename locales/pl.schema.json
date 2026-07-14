@@ -1156,5 +1156,14 @@
     "storytelling": "Narracja",
     "text": "Tekst",
     "blog_post": "Post na blogu"
+  },
+  "konbini": {
+    "names": {
+      "konbini_brand": "Marka KONBINI"
+    },
+    "content": {
+      "social_links": "Profile społecznościowe",
+      "social_links_info": "Używane w danych strukturalnych (Organization sameAs), aby wyszukiwarki i agenci zakupowi AI mogli powiązać sklep z jego profilami."
+    }
   }
 }

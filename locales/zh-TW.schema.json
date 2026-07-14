@@ -1156,5 +1156,14 @@
     "storytelling": "故事敘述",
     "text": "文字",
     "blog_post": "網誌文章"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI 品牌"
+    },
+    "content": {
+      "social_links": "社群檔案",
+      "social_links_info": "用於結構化資料（Organization sameAs），讓搜尋引擎與 AI 購物代理能將商店與其檔案建立關聯。"
+    }
   }
 }

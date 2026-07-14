@@ -1,0 +1,34 @@
+{% doc %}
+  KONBINI brand design tokens (layer 3 — see docs/01-tokens.md).
+  Brand constants live here as fixed values, not settings. All KONBINI
+  custom code consumes these `--k-*` vars or Horizon's generated vars —
+  never raw hexes. Every accent passes WCAG AA on white (see docs/01).
+{% enddoc %}
+<style>
+  :root {
+    /* ink & paper */
+    --k-color-ink: #0b00b5; /* brand cobalt — 12.5:1 on white */
+    --k-color-ink-soft: color-mix(in oklab, var(--k-color-ink) 72%, white);
+    --k-color-paper: #ffffff;
+    --k-color-paper-warm: #faf8f4;
+    --k-color-sumi: #1c1c1e; /* near-black text — 17:1 */
+    --k-color-mist: #efeef9; /* cobalt-tinted subtle background */
+
+    /* complementary accents (derived from cobalt, muted for wabi-sabi) */
+    --k-color-kaki: #b23c0e; /* persimmon — sale/promo; 5.9:1 with white both ways */
+    --k-color-moss: #3d6b50; /* moss — success/in-stock; 6.2:1 on white */
+
+    /* ma 間 spacing scale (fibonacci-like rhythm) */
+    --k-space-1: 0.5rem;
+    --k-space-2: 0.8125rem;
+    --k-space-3: 1.3125rem;
+    --k-space-4: 2.125rem;
+    --k-space-5: 3.4375rem;
+    --k-space-6: 5.5625rem;
+
+    /* motion */
+    --k-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --k-duration-micro: 180ms;
+    --k-duration-reveal: 420ms;
+  }
+</style>

@@ -1156,5 +1156,14 @@
     "storytelling": "Tarinankerronta",
     "text": "Teksti",
     "blog_post": "Blogipostaus"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI-brändi"
+    },
+    "content": {
+      "social_links": "Sosiaaliset profiilit",
+      "social_links_info": "Käytetään strukturoidussa datassa (Organization sameAs), jotta hakukoneet ja tekoälyostoagentit voivat yhdistää kaupan sen profiileihin."
+    }
   }
 }
