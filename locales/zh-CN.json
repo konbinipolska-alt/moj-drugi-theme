@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "欢迎光临我们的门店",
       "directions": "查看地图"
+    },
+    "breadcrumbs": {
+      "label": "面包屑导航",
+      "home": "首页"
     }
   }
 }

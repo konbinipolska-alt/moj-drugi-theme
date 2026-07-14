@@ -364,6 +364,10 @@
     "local_store": {
       "heading": "Navštívte našu predajňu",
       "directions": "Zobraziť na mape"
+    },
+    "breadcrumbs": {
+      "label": "Omrvinková navigácia",
+      "home": "Domov"
     }
   }
 }

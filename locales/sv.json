@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Besök vår butik",
       "directions": "Visa vägen"
+    },
+    "breadcrumbs": {
+      "label": "Synlig sökväg",
+      "home": "Hem"
     }
   }
 }

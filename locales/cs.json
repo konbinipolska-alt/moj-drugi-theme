@@ -364,6 +364,10 @@
     "local_store": {
       "heading": "Navštivte naši prodejnu",
       "directions": "Zobrazit na mapě"
+    },
+    "breadcrumbs": {
+      "label": "Drobečková navigace",
+      "home": "Domů"
     }
   }
 }

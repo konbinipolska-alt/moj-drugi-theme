@@ -357,6 +357,10 @@
     "local_store": {
       "heading": "Vizitează magazinul nostru",
       "directions": "Vezi pe hartă"
+    },
+    "breadcrumbs": {
+      "label": "Cale de navigare",
+      "home": "Acasă"
     }
   }
 }

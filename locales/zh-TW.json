@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "歡迎光臨我們的門市",
       "directions": "查看地圖"
+    },
+    "breadcrumbs": {
+      "label": "導覽路徑",
+      "home": "首頁"
     }
   }
 }

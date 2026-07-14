@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Besøg vores butik",
       "directions": "Find vej"
+    },
+    "breadcrumbs": {
+      "label": "Brødkrummesti",
+      "home": "Forside"
     }
   }
 }

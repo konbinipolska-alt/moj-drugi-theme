@@ -2,6 +2,12 @@
   {{ closest.product | structured_data }}
 </script>
 
+{% comment %} KONBINI:start — breadcrumbs (UX + BreadcrumbList JSON-LD) {% endcomment %}
+<div class="section section--page-width">
+  {% render 'konbini-breadcrumbs', context: 'product', product: closest.product %}
+</div>
+{% comment %} KONBINI:end {% endcomment %}
+
 {% capture media_gallery %}
   {%- content_for 'block',
     type: '_product-media-gallery',

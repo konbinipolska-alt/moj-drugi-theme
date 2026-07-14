@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "Vieraile myymälässämme",
       "directions": "Näytä reitti"
+    },
+    "breadcrumbs": {
+      "label": "Murupolku",
+      "home": "Etusivu"
     }
   }
 }

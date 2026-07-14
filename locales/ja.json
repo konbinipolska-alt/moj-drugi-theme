@@ -350,6 +350,10 @@
     "local_store": {
       "heading": "実店舗のご案内",
       "directions": "地図を見る"
+    },
+    "breadcrumbs": {
+      "label": "パンくずリスト",
+      "home": "ホーム"
     }
   }
 }

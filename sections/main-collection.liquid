@@ -40,6 +40,12 @@
   >
     {% render 'skip-to-content-link', href: '#ResultsList', text: 'accessibility.skip_to_results_list' %}
 
+    {% comment %} KONBINI:start — breadcrumbs (UX + BreadcrumbList JSON-LD) {% endcomment %}
+    <div class="section-content-width">
+      {% render 'konbini-breadcrumbs', context: 'collection', collection: collection %}
+    </div>
+    {% comment %} KONBINI:end {% endcomment %}
+
     <div
       class="collection-wrapper grid gap-style{% if section.settings.product_grid_width == 'full-width' %} collection-wrapper--grid-full-width{% endif %}"
     >

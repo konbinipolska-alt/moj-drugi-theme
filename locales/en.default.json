@@ -378,6 +378,10 @@
     "local_store": {
       "heading": "Visit our store",
       "directions": "Get directions"
+    },
+    "breadcrumbs": {
+      "label": "Breadcrumbs",
+      "home": "Home"
     }
   }
 }

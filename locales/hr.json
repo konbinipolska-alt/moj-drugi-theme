@@ -357,6 +357,10 @@
     "local_store": {
       "heading": "Posjetite našu trgovinu",
       "directions": "Prikaži na karti"
+    },
+    "breadcrumbs": {
+      "label": "Navigacijska staza",
+      "home": "Početna"
     }
   }
 }
