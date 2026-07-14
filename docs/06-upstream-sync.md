@@ -25,6 +25,16 @@ git merge upstream/main        # plain merge — never squash sync branches
    cart, search) + Lighthouse.
 6. PR → plain merge to `main`.
 
+## Active compatibility patches
+
+- **Static color defaults** (`scripts/compat-static-color-defaults.sh`): the store's
+  Theme API rejects `color_palette` references as color-setting defaults
+  (documented on shopify.dev but not yet rolled out to this shop, as of 2026-07).
+  The patch replaces 79 dynamic defaults across 17 upstream files with static
+  hexes (`#000000`/`#FFFFFF` — white uppercase as a revert sentinel).
+  **Re-run `apply` after every upstream sync. Run `revert` (after reading the
+  script's caveats) once a scratch-theme push accepts dynamic defaults.**
+
 ## Danger zones
 
 - `_`-prefixed private blocks/snippets are internal API — upstream renames freely.
