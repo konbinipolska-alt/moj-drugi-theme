@@ -60,6 +60,9 @@
             ,
             "hasMap": {{ settings.konbini_store_maps_url | json }}
           {%- endif %}
+          {%- comment -%} machine-readable hours: daily 10:01–21:12 per client {%- endcomment -%}
+          ,
+          "openingHours": "Mo-Su 10:01-21:12"
         },
       {%- endif %}
       {
