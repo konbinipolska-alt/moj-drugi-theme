@@ -1,0 +1,60 @@
+{% doc %}
+  Local (brick-and-mortar) store info card. Reads address/hours from theme
+  settings (KONBINI brand group) — one source of truth shared with the
+  LocalBusiness JSON-LD. Renders nothing when the street is blank.
+
+  @param {boolean} [show_heading] - render the "Visit us" heading; default true
+{% enddoc %}
+{%- liquid
+  if show_heading == nil
+    assign show_heading = true
+  endif
+-%}
+{%- if settings.konbini_store_street != blank -%}
+  <div class="konbini-local-store">
+    {%- if show_heading -%}
+      <p class="konbini-local-store__heading">{{ 'konbini.local_store.heading' | t }}</p>
+    {%- endif -%}
+    <address class="konbini-local-store__address">
+      {{ settings.konbini_store_street }}
+      {%- if settings.konbini_store_zip != blank or settings.konbini_store_city != blank -%}
+        <br>
+        {{ settings.konbini_store_zip }} {{ settings.konbini_store_city }}
+      {%- endif -%}
+    </address>
+    {%- if settings.konbini_store_hours != blank -%}
+      <p class="konbini-local-store__hours">{{ settings.konbini_store_hours | newline_to_br }}</p>
+    {%- endif -%}
+    {%- if settings.konbini_store_maps_url != blank -%}
+      <a class="konbini-local-store__link" href="{{ settings.konbini_store_maps_url }}" target="_blank" rel="noopener">
+        {{- 'konbini.local_store.directions' | t -}}
+      </a>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .konbini-local-store {
+    display: grid;
+    gap: var(--k-space-1);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+  .konbini-local-store__heading {
+    margin: 0;
+    font-weight: 600;
+  }
+  .konbini-local-store__address {
+    font-style: normal;
+    margin: 0;
+  }
+  .konbini-local-store__hours {
+    margin: 0;
+    color: color-mix(in oklab, currentColor 72%, transparent);
+  }
+  .konbini-local-store__link {
+    color: inherit;
+    text-decoration-color: var(--k-color-ink);
+    text-underline-offset: 3px;
+  }
+{% endstylesheet %}

@@ -2147,6 +2147,51 @@
         "type": "url",
         "id": "konbini_social_youtube",
         "label": "YouTube"
+      },
+      {
+        "type": "header",
+        "content": "t:konbini.content.local_store"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:konbini.content.local_store_settings_info"
+      },
+      {
+        "type": "text",
+        "id": "konbini_store_street",
+        "label": "t:konbini.settings.store_street"
+      },
+      {
+        "type": "text",
+        "id": "konbini_store_zip",
+        "label": "t:konbini.settings.store_zip"
+      },
+      {
+        "type": "text",
+        "id": "konbini_store_city",
+        "label": "t:konbini.settings.store_city"
+      },
+      {
+        "type": "textarea",
+        "id": "konbini_store_hours",
+        "label": "t:konbini.settings.store_hours",
+        "info": "t:konbini.info.store_hours"
+      },
+      {
+        "type": "url",
+        "id": "konbini_store_maps_url",
+        "label": "t:konbini.settings.store_maps_url"
+      },
+      {
+        "type": "header",
+        "content": "t:konbini.content.spotify"
+      },
+      {
+        "type": "text",
+        "id": "konbini_spotify_playlist",
+        "label": "t:konbini.settings.spotify_playlist",
+        "info": "t:konbini.info.spotify_playlist",
+        "default": "https://open.spotify.com/playlist/68q7TYjLgjswOnGRgcsSEq"
       }
     ]
   }

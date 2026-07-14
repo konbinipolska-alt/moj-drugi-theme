@@ -355,5 +355,15 @@
       "default_title": "Predvolený názov",
       "sticky_add_to_cart": "Panel rýchleho pridania do košíka"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Pustite si náš playlist",
+      "iframe_title": "Playlist KONBINI na Spotify"
+    },
+    "local_store": {
+      "heading": "Navštívte našu predajňu",
+      "directions": "Zobraziť na mape"
+    }
   }
 }

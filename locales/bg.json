@@ -341,5 +341,15 @@
       "success_moderated": "Коментарът е публикуван, в очакване на модериране",
       "success": "Коментарът е публикуван"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Пуснете нашия плейлист",
+      "iframe_title": "Плейлист на KONBINI в Spotify"
+    },
+    "local_store": {
+      "heading": "Посетете магазина ни",
+      "directions": "Вижте на картата"
+    }
   }
 }

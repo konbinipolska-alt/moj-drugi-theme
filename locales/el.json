@@ -341,5 +341,15 @@
       "success_moderated": "Το σχόλιο δημοσιεύτηκε, εν αναμονή τροποποίησης",
       "success": "Το σχόλιο δημοσιεύτηκε"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Παίξτε την playlist μας",
+      "iframe_title": "Playlist KONBINI στο Spotify"
+    },
+    "local_store": {
+      "heading": "Επισκεφθείτε το κατάστημά μας",
+      "directions": "Δείτε στον χάρτη"
+    }
   }
 }

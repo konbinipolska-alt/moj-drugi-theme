@@ -1,0 +1,56 @@
+{% doc %}
+  KONBINI Spotify playlist block — merchant-addable wrapper around the
+  konbini-spotify facade snippet. Playlist URL lives in theme settings
+  (KONBINI brand group); this block controls presentation only.
+{% enddoc %}
+<div class="konbini-spotify-block spacing-style" style="{% render 'spacing-style', settings: block.settings %}">
+  {% render 'konbini-spotify', compact: block.settings.compact %}
+</div>
+
+{% schema %}
+{
+  "name": "t:konbini.names.spotify",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:konbini.content.spotify_info"
+    },
+    {
+      "type": "checkbox",
+      "id": "compact",
+      "label": "t:konbini.settings.compact_player",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:konbini.names.spotify",
+      "category": "t:categories.custom"
+    }
+  ]
+}
+{% endschema %}

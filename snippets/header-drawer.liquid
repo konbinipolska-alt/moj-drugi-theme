@@ -583,6 +583,14 @@
         class="menu-drawer__utility-links menu-drawer__animated-element"
         style="--menu-drawer-animation-index: {{ linklist.links.size }};"
       >
+        {% comment %} KONBINI:start — local store info + Spotify in nav drawer (styles in konbini-overrides.css) {% endcomment %}
+        {% if data_header_drawer_type == 'mobile-drawer' %}
+          <div class="konbini-drawer-extras">
+            {% render 'konbini-local-store' %}
+            {% render 'konbini-spotify', compact: true %}
+          </div>
+        {% endif %}
+        {% comment %} KONBINI:end {% endcomment %}
         {% liquid
           assign show_language = section.settings.show_language
           if localization.available_languages.size <= 1

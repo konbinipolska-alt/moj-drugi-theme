@@ -355,5 +355,15 @@
       "default_title": "Tytuł domyślny",
       "sticky_add_to_cart": "Pasek szybkiego dodawania do koszyka"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Włącz naszą playlistę",
+      "iframe_title": "Playlista KONBINI w Spotify"
+    },
+    "local_store": {
+      "heading": "Wpadnij do nas",
+      "directions": "Zobacz na mapie"
+    }
   }
 }

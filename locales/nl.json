@@ -341,5 +341,15 @@
       "default_title": "Standaardtitel",
       "sticky_add_to_cart": "Balk voor snel toevoegen aan winkelwagen"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Speel onze playlist af",
+      "iframe_title": "KONBINI-playlist op Spotify"
+    },
+    "local_store": {
+      "heading": "Bezoek onze winkel",
+      "directions": "Routebeschrijving"
+    }
   }
 }

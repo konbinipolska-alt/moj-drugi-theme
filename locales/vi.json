@@ -341,5 +341,15 @@
       "default_title": "Tiêu đề mặc định",
       "sticky_add_to_cart": "Thanh thêm nhanh vào giỏ hàng"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Phát danh sách phát của chúng tôi",
+      "iframe_title": "Danh sách phát KONBINI trên Spotify"
+    },
+    "local_store": {
+      "heading": "Ghé thăm cửa hàng của chúng tôi",
+      "directions": "Xem bản đồ"
+    }
   }
 }

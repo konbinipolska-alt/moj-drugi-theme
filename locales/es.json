@@ -348,5 +348,15 @@
       "success_moderated": "Comentario publicado y a la espera de moderación",
       "success": "Comentario publicado"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Reproduce nuestra playlist",
+      "iframe_title": "Playlist de KONBINI en Spotify"
+    },
+    "local_store": {
+      "heading": "Visita nuestra tienda",
+      "directions": "Cómo llegar"
+    }
   }
 }

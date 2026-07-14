@@ -341,5 +341,15 @@
       "success_moderated": "ความคิดเห็นถูกโพสต์แล้ว กำลังรอการตรวจสอบ",
       "success": "ความคิดเห็นถูกโพสต์แล้ว"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "เล่นเพลย์ลิสต์ของเรา",
+      "iframe_title": "เพลย์ลิสต์ KONBINI บน Spotify"
+    },
+    "local_store": {
+      "heading": "มาเยี่ยมร้านของเรา",
+      "directions": "ดูแผนที่"
+    }
   }
 }

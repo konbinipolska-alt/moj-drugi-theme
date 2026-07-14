@@ -341,5 +341,15 @@
       "default_title": "Alapértelmezett cím",
       "sticky_add_to_cart": "Gyors hozzáadás a kosárhoz sáv"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Játszd le a lejátszási listánkat",
+      "iframe_title": "KONBINI lejátszási lista a Spotifyon"
+    },
+    "local_store": {
+      "heading": "Látogass el üzletünkbe",
+      "directions": "Útvonal megtekintése"
+    }
   }
 }

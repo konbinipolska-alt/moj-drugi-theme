@@ -341,5 +341,15 @@
       "success_moderated": "댓글이 게시되었습니다. 조정 대기 중입니다",
       "success": "댓글 게시됨"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "플레이리스트 재생",
+      "iframe_title": "Spotify의 KONBINI 플레이리스트"
+    },
+    "local_store": {
+      "heading": "매장에 방문하세요",
+      "directions": "길찾기"
+    }
   }
 }

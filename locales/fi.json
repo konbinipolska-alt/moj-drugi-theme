@@ -341,5 +341,15 @@
       "success_moderated": "Kommentti on julkaistu; odotetaan moderointia",
       "success": "Kommentti on julkaistu"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Toista soittolistamme",
+      "iframe_title": "KONBINI-soittolista Spotifyssa"
+    },
+    "local_store": {
+      "heading": "Vieraile myymälässämme",
+      "directions": "Näytä reitti"
+    }
   }
 }

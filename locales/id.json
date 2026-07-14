@@ -341,5 +341,15 @@
       "success_moderated": "Komentar diposting, menunggu moderasi",
       "success": "Komentar diposting"
     }
+    },
+  "konbini": {
+    "spotify": {
+      "play_label": "Putar playlist kami",
+      "iframe_title": "Playlist KONBINI di Spotify"
+    },
+    "local_store": {
+      "heading": "Kunjungi toko kami",
+      "directions": "Lihat rute"
+    }
   }
 }
