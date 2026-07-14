@@ -25,6 +25,9 @@
     {%- if settings.konbini_store_hours != blank -%}
       <p class="konbini-local-store__hours">{{ settings.konbini_store_hours | newline_to_br }}</p>
     {%- endif -%}
+    {%- if settings.konbini_store_note != blank -%}
+      <p class="konbini-local-store__note">{{ settings.konbini_store_note }}</p>
+    {%- endif -%}
     {%- if settings.konbini_store_maps_url != blank -%}
       <a class="konbini-local-store__link" href="{{ settings.konbini_store_maps_url }}" target="_blank" rel="noopener">
         {{- 'konbini.local_store.directions' | t -}}
@@ -49,6 +52,10 @@
     margin: 0;
   }
   .konbini-local-store__hours {
+    margin: 0;
+    color: color-mix(in oklab, currentColor 72%, transparent);
+  }
+  .konbini-local-store__note {
     margin: 0;
     color: color-mix(in oklab, currentColor 72%, transparent);
   }

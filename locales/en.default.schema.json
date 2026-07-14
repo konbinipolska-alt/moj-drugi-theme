@@ -1282,11 +1282,15 @@
       "store_city": "City",
       "store_hours": "Opening hours",
       "store_maps_url": "Map link (Google Maps)",
-      "spotify_playlist": "Spotify playlist URL"
+      "spotify_playlist": "Spotify playlist URL",
+      "store_note": "Extra note",
+      "instant_load": "Load player immediately"
     },
     "info": {
       "store_hours": "One line per entry, e.g. “Mon–Fri 10–18”.",
-      "spotify_playlist": "Full link to the playlist on open.spotify.com."
+      "spotify_playlist": "Full link to the playlist on open.spotify.com.",
+      "store_note": "Shown under the hours, e.g. a pet-friendly note.",
+      "instant_load": "Embeds Spotify on page load instead of after a click. Adds third-party weight."
     }
   }
 }

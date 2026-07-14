@@ -2178,6 +2178,12 @@
         "info": "t:konbini.info.store_hours"
       },
       {
+        "type": "text",
+        "id": "konbini_store_note",
+        "label": "t:konbini.settings.store_note",
+        "info": "t:konbini.info.store_note"
+      },
+      {
         "type": "url",
         "id": "konbini_store_maps_url",
         "label": "t:konbini.settings.store_maps_url"
