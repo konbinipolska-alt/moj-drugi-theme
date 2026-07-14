@@ -95,6 +95,9 @@
   endcapture
 
   capture actions
+    # KONBINI:start — local store link + Spotify popover in the header bar
+    render 'konbini-nav-extras'
+    # KONBINI:end
     render 'header-actions', customer_account_menu: section.settings.customer_account_menu, display_style: section.settings.actions_display_style, section: section
   endcapture
 
