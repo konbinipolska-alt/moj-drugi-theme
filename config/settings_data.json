@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo_height": 36,
-    "logo_height_mobile": 28,
+    "logo_height": 31,
+    "logo_height_mobile": 24,
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n5",
     "type_heading_font": "lora_n5",
@@ -104,8 +104,8 @@
   },
   "presets": {
     "KONBINI Wabi-Sabi": {
-      "logo_height": 36,
-      "logo_height_mobile": 28,
+      "logo_height": 31,
+      "logo_height_mobile": 24,
       "type_body_font": "inter_n4",
       "type_subheading_font": "inter_n5",
       "type_heading_font": "lora_n5",
