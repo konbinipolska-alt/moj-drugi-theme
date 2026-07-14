@@ -1156,5 +1156,14 @@
     "storytelling": "스토리텔링",
     "text": "텍스트",
     "blog_post": "블로그 게시물"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI 브랜드"
+    },
+    "content": {
+      "social_links": "소셜 프로필",
+      "social_links_info": "구조화된 데이터(Organization sameAs)에 사용되어 검색 엔진과 AI 쇼핑 에이전트가 스토어와 프로필을 연결할 수 있습니다."
+    }
   }
 }

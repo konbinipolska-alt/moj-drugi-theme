@@ -1156,5 +1156,14 @@
     "storytelling": "การบอกเล่าเรื่องราว",
     "text": "ข้อความ",
     "blog_post": "บล็อกโพสต์"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "แบรนด์ KONBINI"
+    },
+    "content": {
+      "social_links": "โปรไฟล์โซเชียล",
+      "social_links_info": "ใช้ในข้อมูลที่มีโครงสร้าง (Organization sameAs) เพื่อให้เครื่องมือค้นหาและเอเจนต์ช้อปปิ้ง AI เชื่อมโยงร้านค้ากับโปรไฟล์ได้"
+    }
   }
 }

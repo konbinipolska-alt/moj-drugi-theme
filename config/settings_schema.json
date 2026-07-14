@@ -2116,5 +2116,38 @@
         "default": "equal-width-buttons"
       }
     ]
+  },
+  {
+    "name": "t:konbini.names.konbini_brand",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:konbini.content.social_links"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:konbini.content.social_links_info"
+      },
+      {
+        "type": "url",
+        "id": "konbini_social_instagram",
+        "label": "Instagram"
+      },
+      {
+        "type": "url",
+        "id": "konbini_social_facebook",
+        "label": "Facebook"
+      },
+      {
+        "type": "url",
+        "id": "konbini_social_tiktok",
+        "label": "TikTok"
+      },
+      {
+        "type": "url",
+        "id": "konbini_social_youtube",
+        "label": "YouTube"
+      }
+    ]
   }
 ]

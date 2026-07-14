@@ -1,0 +1,47 @@
+/* KONBINI overrides — restyling of upstream Horizon via tokens only.
+   Rules here must reference --k-* or Horizon-generated vars, never raw
+   values (docs/01-tokens.md). Keep this file small; block-specific styles
+   belong in the blocks themselves. */
+
+/* ---------------------------------------------------------------------
+   CJK typography groundwork (docs/04-i18n.md)
+   Applies now to inline JP/KR spans (e.g. original product names) and
+   later to full ja/ko storefront locales.
+   --------------------------------------------------------------------- */
+
+:lang(ja) {
+  font-family:
+    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', Meiryo,
+    'Noto Sans JP', sans-serif;
+  line-break: strict;
+  font-style: normal; /* no faux italics for CJK */
+}
+
+:lang(ko) {
+  font-family:
+    'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+  word-break: keep-all;
+  font-style: normal;
+}
+
+/* Uppercase and wide tracking are Latin-only treatments: neutralize them
+   for CJK content regardless of heading-case theme settings. */
+:lang(ja) *,
+:lang(ko) *,
+[lang='ja'],
+[lang='ko'] {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* ---------------------------------------------------------------------
+   Motion restraint — wabi-sabi micro-interactions use the shared easing.
+   Respect users who opt out of motion.
+   --------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --k-duration-micro: 0ms;
+    --k-duration-reveal: 0ms;
+  }
+}

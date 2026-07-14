@@ -30,6 +30,12 @@
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-palette' -%}
+    {% comment %} KONBINI:start {% endcomment %}
+    {%- render 'konbini-tokens' -%}
+    {%- if request.page_type == 'index' -%}
+      {%- render 'konbini-jsonld-organization' -%}
+    {%- endif -%}
+    {% comment %} KONBINI:end {% endcomment %}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}

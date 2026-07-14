@@ -1,0 +1,60 @@
+{% doc %}
+  Organization + WebSite JSON-LD (agentic commerce / SEO foundation —
+  docs/05-structured-data.md). Rendered from layout/theme.liquid on the
+  home page only. `sameAs` entries come from the KONBINI brand settings
+  group; blank settings are omitted.
+{% enddoc %}
+{%- liquid
+  assign social_links = ''
+  if settings.konbini_social_instagram != blank
+    assign social_links = social_links | append: '"' | append: settings.konbini_social_instagram | append: '",'
+  endif
+  if settings.konbini_social_facebook != blank
+    assign social_links = social_links | append: '"' | append: settings.konbini_social_facebook | append: '",'
+  endif
+  if settings.konbini_social_tiktok != blank
+    assign social_links = social_links | append: '"' | append: settings.konbini_social_tiktok | append: '",'
+  endif
+  if settings.konbini_social_youtube != blank
+    assign social_links = social_links | append: '"' | append: settings.konbini_social_youtube | append: '",'
+  endif
+-%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ shop.url }}#organization",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.url | append: '/' | json }},
+        {%- if settings.logo != blank %}
+          "logo": {
+            "@type": "ImageObject",
+            "url": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+          },
+        {%- endif %}
+        {%- if social_links != blank %}
+          "sameAs": [{{ social_links | remove_last: ',' }}],
+        {%- endif %}
+        "email": {{ shop.email | json }}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ shop.url }}#website",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.url | append: '/' | json }},
+        "publisher": { "@id": "{{ shop.url }}#organization" },
+        "inLanguage": {{ request.locale.iso_code | json }},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+</script>

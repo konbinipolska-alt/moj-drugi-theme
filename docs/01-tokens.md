@@ -21,27 +21,23 @@ button states must be explicitly tested (Phase 1 checklist).
 
 Rendered from `layout/theme.liquid` right after `color-palette` (fenced single line).
 
-```css
-:root {
-  /* ink & paper */
-  --k-color-ink: #0b00b5;
-  --k-color-ink-soft: color-mix(in oklch, var(--k-color-ink) 72%, white);
-  --k-color-paper: #ffffff;
-  --k-color-paper-warm: #faf8f4;   /* washi undertone */
-  --k-color-sumi: #1c1c1e;         /* near-black text */
-  /* complementary accents derived from #0b00b5 in oklch */
-  --k-color-kaki: /* persimmon — sale/promo */;
-  --k-color-moss: /* moss green — in stock / success */;
-  /* ma 間 spacing (approx. fibonacci rhythm) */
-  --k-space-1: 0.5rem; --k-space-2: 0.8125rem; --k-space-3: 1.3125rem;
-  --k-space-4: 2.125rem; --k-space-5: 3.4375rem; --k-space-6: 5.5625rem;
-  /* motion */
-  --k-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --k-duration-micro: 180ms; --k-duration-reveal: 420ms;
-}
-```
+The snippet is the source of truth. Final palette (all WCAG-AA verified; no
+textures — client decision, quiet comes from space and type):
 
-Final accent values are fixed in Phase 1 (contrast-checked; cobalt on white = 8.6:1 AA/AAA).
+| Token | Value | Role | Contrast |
+|---|---|---|---|
+| `--k-color-ink` | `#0b00b5` | brand cobalt, CTA, links | 12.5:1 on white |
+| `--k-color-sumi` | `#1c1c1e` | text | 17:1 on white |
+| `--k-color-kaki` | `#b23c0e` | persimmon — sale/promo | 5.9:1 vs white (both ways) |
+| `--k-color-moss` | `#3d6b50` | moss — success/in-stock | 6.2:1 on white |
+| `--k-color-mist` | `#efeef9` | cobalt-tinted subtle bg | 14.8:1 with sumi |
+| `--k-color-paper-warm` | `#faf8f4` | warm bg alternative | 16:1 with sumi |
+
+Plus the *ma* spacing scale (`--k-space-1..6`, fibonacci-like), motion tokens
+(`--k-ease-out`, `--k-duration-micro/reveal` — zeroed under
+`prefers-reduced-motion`), and `--k-color-ink-soft` via `color-mix`.
+Hover states are computed by Horizon's palette logic — verified: cobalt hovers
+to `#1202ff` with white text (8.4:1), no contrast flip.
 
 ## Rules
 

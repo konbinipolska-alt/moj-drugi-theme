@@ -1258,5 +1258,14 @@
     "when_will_order_arrive": "When will I get my order?",
     "where_are_products_made": "Where are your products manufactured?",
     "disclosures": "Disclosures"
+  },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI brand"
+    },
+    "content": {
+      "social_links": "Social profiles",
+      "social_links_info": "Used in structured data (Organization sameAs) so search engines and AI shopping agents can link the store to its profiles."
+    }
   }
 }

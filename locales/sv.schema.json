@@ -1156,5 +1156,14 @@
     "storytelling": "Storytelling",
     "text": "Text",
     "blog_post": "Bloggpost"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI-varumärke"
+    },
+    "content": {
+      "social_links": "Sociala profiler",
+      "social_links_info": "Används i strukturerad data (Organization sameAs) så att sökmotorer och AI-shoppingagenter kan koppla butiken till dess profiler."
+    }
   }
 }

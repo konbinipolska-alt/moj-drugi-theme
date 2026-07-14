@@ -1156,5 +1156,14 @@
     "storytelling": "Historiefortelling",
     "text": "Tekst",
     "blog_post": "Blogginnlegg"
+    },
+  "konbini": {
+    "names": {
+      "konbini_brand": "KONBINI-merkevare"
+    },
+    "content": {
+      "social_links": "Sosiale profiler",
+      "social_links_info": "Brukes i strukturerte data (Organization sameAs) slik at søkemotorer og AI-handleagenter kan koble butikken til profilene dens."
+    }
   }
 }
