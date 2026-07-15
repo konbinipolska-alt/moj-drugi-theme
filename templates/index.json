@@ -87,7 +87,7 @@
           "octy-i-oleje",
           "przydasie-i-tentegi"
         ],
-        "layout_type": "grid",
+        "layout_type": "bento",
         "carousel_on_mobile": true,
         "columns": 4,
         "mobile_columns": "2",
@@ -99,8 +99,9 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 28,
-        "padding-block-start": 24,
-        "padding-block-end": 24
+        "padding-block-start": 32,
+        "padding-block-end": 96,
+        "bento_gap": 8
       }
     },
     "list_zupoteka": {
@@ -142,7 +143,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><em>汁</em> {{ closest.collection.title }}</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -285,8 +286,8 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 24
       }
     },
     "list_slodycze": {
@@ -328,7 +329,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><em>菓子</em> {{ closest.collection.title }}</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -471,8 +472,8 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 24
       }
     },
     "hero_search": {
@@ -484,7 +485,7 @@
         "seo_heading": "KONBINI — Smaki Japonii i Korei",
         "section_width": "page-width",
         "padding-block-start": 72,
-        "padding-block-end": 40
+        "padding-block-end": 48
       }
     },
     "list_herbata": {
@@ -526,7 +527,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><em>茶</em> {{ closest.collection.title }}</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -669,8 +670,8 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 24
       }
     },
     "list_kawa": {
@@ -712,7 +713,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3><em>珈琲</em> {{ closest.collection.title }}</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -855,8 +856,8 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 96
       }
     },
     "quick_links": {
@@ -922,13 +923,24 @@
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "ql_kanji": {
+          "type": "konbini-kanji",
+          "name": "Kanji",
+          "settings": {
+            "kanji_text": "コンビニ",
+            "size": "sm",
+            "vertical": true
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "ql_orders",
         "ql_shipping",
         "ql_returns",
-        "ql_store"
+        "ql_store",
+        "ql_kanji"
       ],
       "settings": {
         "content_direction": "row",

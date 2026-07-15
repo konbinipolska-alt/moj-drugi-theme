@@ -1162,7 +1162,8 @@
       "konbini_brand": "Marka KONBINI",
       "spotify": "KONBINI Spotify",
       "local_store": "Sklep stacjonarny KONBINI",
-      "hero_search": "KONBINI wyszukiwarka hero"
+      "hero_search": "KONBINI wyszukiwarka hero",
+      "kanji": "KONBINI akcent kanji"
     },
     "content": {
       "social_links": "Profile społecznościowe",
@@ -1172,7 +1173,8 @@
       "local_store": "Sklep stacjonarny",
       "local_store_settings_info": "Wspólne dla bloków sklepu stacjonarnego i danych strukturalnych LocalBusiness.",
       "spotify": "Spotify",
-      "hero_search_info": "Intro sklepu w modelu search-first: wielka wyszukiwarka z podpowiedziami i popularnymi frazami. Celowo bez nagłówków."
+      "hero_search_info": "Intro sklepu w modelu search-first: wielka wyszukiwarka z podpowiedziami i popularnymi frazami. Celowo bez nagłówków.",
+      "kanji_info": "Dekoracyjny japoński znak (ukryty dla czytników). Pionowo = akcent tategaki."
     },
     "settings": {
       "compact_player": "Kompaktowy odtwarzacz",
@@ -1187,7 +1189,9 @@
       "instant_load": "Ładuj odtwarzacz od razu",
       "popular_phrases": "Popularne frazy",
       "max_results": "Maks. podpowiedzi",
-      "seo_heading": "Nagłówek SEO (ukryty)"
+      "seo_heading": "Nagłówek SEO (ukryty)",
+      "kanji_text": "Znak lub krótki tekst",
+      "kanji_vertical": "Pionowo (tategaki)"
     },
     "info": {
       "store_hours": "Jedna linia na wpis, np. „pon.–pt. 10–18”.",

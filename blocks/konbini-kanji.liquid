@@ -1,0 +1,79 @@
+{% doc %}
+  KONBINI kanji accent — a decorative Japanese glyph (or short text) used as
+  a typographic signature: section kickers, vertical (tategaki) edge accents.
+  Always aria-hidden (purely decorative) with lang="ja" for correct glyph
+  rendering via the CJK font stack.
+{% enddoc %}
+{%- if block.settings.kanji_text != blank -%}
+  <span
+    class="konbini-kanji konbini-kanji--{{ block.settings.size }}{% if block.settings.vertical %} konbini-kanji--vertical{% endif %}"
+    lang="ja"
+    aria-hidden="true"
+    {{ block.shopify_attributes }}
+  >
+    {{- block.settings.kanji_text -}}
+  </span>
+{%- endif -%}
+
+{% stylesheet %}
+  .konbini-kanji {
+    display: inline-block;
+    color: color-mix(in oklab, var(--k-color-sumi) 32%, transparent);
+    line-height: 1;
+    user-select: none;
+  }
+  .konbini-kanji--sm {
+    font-size: 1.25rem;
+  }
+  .konbini-kanji--md {
+    font-size: 2rem;
+  }
+  .konbini-kanji--lg {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+  .konbini-kanji--vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.35em;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:konbini.names.kanji",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:konbini.content.kanji_info"
+    },
+    {
+      "type": "text",
+      "id": "kanji_text",
+      "label": "t:konbini.settings.kanji_text"
+    },
+    {
+      "type": "select",
+      "id": "size",
+      "label": "t:settings.size",
+      "options": [
+        { "value": "sm", "label": "t:options.small" },
+        { "value": "md", "label": "t:options.medium" },
+        { "value": "lg", "label": "t:options.large" }
+      ],
+      "default": "md"
+    },
+    {
+      "type": "checkbox",
+      "id": "vertical",
+      "label": "t:konbini.settings.kanji_vertical",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:konbini.names.kanji",
+      "category": "t:categories.custom"
+    }
+  ]
+}
+{% endschema %}
