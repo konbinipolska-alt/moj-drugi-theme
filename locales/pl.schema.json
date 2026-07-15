@@ -1161,7 +1161,8 @@
     "names": {
       "konbini_brand": "Marka KONBINI",
       "spotify": "KONBINI Spotify",
-      "local_store": "Sklep stacjonarny KONBINI"
+      "local_store": "Sklep stacjonarny KONBINI",
+      "hero_search": "KONBINI wyszukiwarka hero"
     },
     "content": {
       "social_links": "Profile społecznościowe",
@@ -1170,7 +1171,8 @@
       "local_store_info": "Adres i godziny ustawia się raz w Ustawieniach szablonu → Marka KONBINI.",
       "local_store": "Sklep stacjonarny",
       "local_store_settings_info": "Wspólne dla bloków sklepu stacjonarnego i danych strukturalnych LocalBusiness.",
-      "spotify": "Spotify"
+      "spotify": "Spotify",
+      "hero_search_info": "Intro sklepu w modelu search-first: wielka wyszukiwarka z podpowiedziami i popularnymi frazami. Celowo bez nagłówków."
     },
     "settings": {
       "compact_player": "Kompaktowy odtwarzacz",
@@ -1182,13 +1184,18 @@
       "store_maps_url": "Link do mapy (Google Maps)",
       "spotify_playlist": "Adres playlisty Spotify",
       "store_note": "Dodatkowa notka",
-      "instant_load": "Ładuj odtwarzacz od razu"
+      "instant_load": "Ładuj odtwarzacz od razu",
+      "popular_phrases": "Popularne frazy",
+      "max_results": "Maks. podpowiedzi",
+      "seo_heading": "Nagłówek SEO (ukryty)"
     },
     "info": {
       "store_hours": "Jedna linia na wpis, np. „pon.–pt. 10–18”.",
       "spotify_playlist": "Pełny link do playlisty na open.spotify.com.",
       "store_note": "Wyświetlana pod godzinami, np. informacja o strefie przyjaznej zwierzętom.",
-      "instant_load": "Osadza Spotify przy wczytaniu strony zamiast po kliknięciu. Dokłada zewnętrzny skrypt."
+      "instant_load": "Osadza Spotify przy wczytaniu strony zamiast po kliknięciu. Dokłada zewnętrzny skrypt.",
+      "popular_phrases": "Po przecinku, np. Matcha, Ramen, Zojirushi.",
+      "seo_heading": "Niewidoczny H1 dla SEO i czytników ekranu."
     }
   }
 }

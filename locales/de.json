@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Brotkrümelnavigation",
       "home": "Startseite"
+    },
+    "search": {
+      "popular": "Beliebte Suchanfragen"
     }
   }
 }

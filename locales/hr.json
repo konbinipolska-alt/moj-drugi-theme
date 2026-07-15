@@ -361,6 +361,9 @@
     "breadcrumbs": {
       "label": "Navigacijska staza",
       "home": "Početna"
+    },
+    "search": {
+      "popular": "Popularna pretraživanja"
     }
   }
 }

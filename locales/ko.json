@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "탐색 경로",
       "home": "홈"
+    },
+    "search": {
+      "popular": "인기 검색어"
     }
   }
 }

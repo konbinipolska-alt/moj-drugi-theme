@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Kruimelpad",
       "home": "Home"
+    },
+    "search": {
+      "popular": "Populaire zoekopdrachten"
     }
   }
 }

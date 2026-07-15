@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Jejak navigasi",
       "home": "Beranda"
+    },
+    "search": {
+      "popular": "Pencarian populer"
     }
   }
 }

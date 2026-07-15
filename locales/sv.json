@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Synlig sökväg",
       "home": "Hem"
+    },
+    "search": {
+      "popular": "Populära sökningar"
     }
   }
 }

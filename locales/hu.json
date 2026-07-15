@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Morzsamenü",
       "home": "Kezdőlap"
+    },
+    "search": {
+      "popular": "Népszerű keresések"
     }
   }
 }

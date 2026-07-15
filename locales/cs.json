@@ -368,6 +368,9 @@
     "breadcrumbs": {
       "label": "Drobečková navigace",
       "home": "Domů"
+    },
+    "search": {
+      "popular": "Oblíbená vyhledávání"
     }
   }
 }

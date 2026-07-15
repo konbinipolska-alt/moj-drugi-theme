@@ -368,6 +368,9 @@
     "breadcrumbs": {
       "label": "Navigacijska pot",
       "home": "Domov"
+    },
+    "search": {
+      "popular": "Priljubljena iskanja"
     }
   }
 }

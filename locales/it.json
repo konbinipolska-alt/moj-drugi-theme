@@ -361,6 +361,9 @@
     "breadcrumbs": {
       "label": "Percorso di navigazione",
       "home": "Home"
+    },
+    "search": {
+      "popular": "Ricerche popolari"
     }
   }
 }

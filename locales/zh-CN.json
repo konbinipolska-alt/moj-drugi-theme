@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "面包屑导航",
       "home": "首页"
+    },
+    "search": {
+      "popular": "热门搜索"
     }
   }
 }

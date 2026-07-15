@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "パンくずリスト",
       "home": "ホーム"
+    },
+    "search": {
+      "popular": "人気の検索"
     }
   }
 }

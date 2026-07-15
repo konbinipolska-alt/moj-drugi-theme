@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Brødkrummesti",
       "home": "Forside"
+    },
+    "search": {
+      "popular": "Populære søgninger"
     }
   }
 }
