@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Đường dẫn điều hướng",
       "home": "Trang chủ"
+    },
+    "search": {
+      "popular": "Tìm kiếm phổ biến"
     }
   }
 }

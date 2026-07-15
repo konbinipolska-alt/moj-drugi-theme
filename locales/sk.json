@@ -368,6 +368,9 @@
     "breadcrumbs": {
       "label": "Omrvinková navigácia",
       "home": "Domov"
+    },
+    "search": {
+      "popular": "Obľúbené vyhľadávania"
     }
   }
 }

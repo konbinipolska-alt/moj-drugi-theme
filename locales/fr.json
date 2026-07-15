@@ -361,6 +361,9 @@
     "breadcrumbs": {
       "label": "Fil d’Ariane",
       "home": "Accueil"
+    },
+    "search": {
+      "popular": "Recherches populaires"
     }
   }
 }

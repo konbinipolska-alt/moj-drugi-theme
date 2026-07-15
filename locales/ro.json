@@ -361,6 +361,9 @@
     "breadcrumbs": {
       "label": "Cale de navigare",
       "home": "Acasă"
+    },
+    "search": {
+      "popular": "Căutări populare"
     }
   }
 }

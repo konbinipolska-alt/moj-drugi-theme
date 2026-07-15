@@ -382,6 +382,9 @@
     "breadcrumbs": {
       "label": "Breadcrumbs",
       "home": "Home"
+    },
+    "search": {
+      "popular": "Popular searches"
     }
   }
 }

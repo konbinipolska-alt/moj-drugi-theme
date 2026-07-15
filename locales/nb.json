@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Brødsmulesti",
       "home": "Hjem"
+    },
+    "search": {
+      "popular": "Populære søk"
     }
   }
 }

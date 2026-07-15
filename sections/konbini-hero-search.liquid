@@ -1,0 +1,246 @@
+{% comment %}
+  KONBINI hero search — search-first home intro (June-session concept,
+  Apple-Store model). A giant predictive-search input with popular-phrase
+  chips. Deliberately no wordmark and no headings in the visible section
+  (client directive); an sr-only H1 carries the brand phrase for SEO/a11y.
+  Progressive enhancement: plain GET /search form without JS.
+{% endcomment %}
+<script type="module" src="{{ 'konbini-hero-search.js' | asset_url }}"></script>
+
+<div
+  class="konbini-hero-search section section--{{ section.settings.section_width }} spacing-style"
+  style="{% render 'spacing-style', settings: section.settings %}"
+>
+  {%- if section.settings.seo_heading != blank -%}
+    <h1 class="visually-hidden">{{ section.settings.seo_heading }}</h1>
+  {%- endif -%}
+
+  <konbini-hero-search data-max-results="{{ section.settings.max_results }}">
+    <form action="{{ routes.search_url }}" method="get" role="search" class="konbini-hero-search__form">
+      <input type="hidden" name="type" value="product">
+      <input
+        type="search"
+        name="q"
+        class="konbini-hero-search__input"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        placeholder="{{ 'content.search_input_placeholder' | t }}"
+        aria-label="{{ 'content.search_input_label' | t }}"
+        role="combobox"
+        aria-expanded="false"
+        aria-controls="KonbiniHeroSearchResults"
+      >
+      <button type="submit" class="konbini-hero-search__submit" aria-label="{{ 'content.search' | t }}">
+        <svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+      </button>
+    </form>
+
+    {%- assign phrases = section.settings.popular_phrases | split: ',' -%}
+    {%- if phrases.size > 0 -%}
+      <div class="konbini-hero-search__chips" aria-label="{{ 'konbini.search.popular' | t }}">
+        {%- for phrase in phrases -%}
+          {%- assign clean = phrase | strip -%}
+          {%- if clean != blank -%}
+            <button type="button" class="konbini-hero-search__chip" data-chip="{{ clean | escape }}">
+              {{- clean -}}
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    <ul id="KonbiniHeroSearchResults" class="konbini-hero-search__results list-unstyled" data-results hidden></ul>
+  </konbini-hero-search>
+</div>
+
+{% stylesheet %}
+  .konbini-hero-search {
+    position: relative;
+  }
+
+  .konbini-hero-search__form {
+    display: flex;
+    align-items: center;
+    gap: var(--k-space-2);
+    border-bottom: 2px solid var(--k-color-sumi);
+    transition: border-color var(--k-duration-micro) var(--k-ease-out);
+  }
+
+  .konbini-hero-search__form:focus-within {
+    border-color: var(--k-color-ink);
+  }
+
+  .konbini-hero-search__input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-family: var(--font-heading--family);
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    line-height: 1.2;
+    padding-block: var(--k-space-2);
+    color: var(--k-color-sumi);
+  }
+
+  .konbini-hero-search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  .konbini-hero-search__submit {
+    background: none;
+    border: none;
+    padding: var(--k-space-1);
+    cursor: pointer;
+    color: var(--k-color-sumi);
+  }
+
+  .konbini-hero-search__submit:hover {
+    color: var(--k-color-ink);
+  }
+
+  .konbini-hero-search__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--k-space-1);
+    margin-top: var(--k-space-3);
+  }
+
+  .konbini-hero-search__chip {
+    border: 1px solid var(--k-color-mist);
+    background: transparent;
+    border-radius: 100px;
+    padding: var(--k-space-1) var(--k-space-2);
+    font: inherit;
+    font-size: 0.8125rem;
+    color: var(--k-color-sumi);
+    cursor: pointer;
+    transition: border-color var(--k-duration-micro) var(--k-ease-out);
+  }
+
+  .konbini-hero-search__chip:hover {
+    border-color: var(--k-color-ink);
+    color: var(--k-color-ink);
+  }
+
+  .konbini-hero-search__results {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(100% + var(--k-space-1));
+    margin: 0;
+    padding: var(--k-space-1);
+    background: var(--k-color-paper);
+    border: 1px solid var(--k-color-mist);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgb(28 28 30 / 0.08);
+    z-index: 20;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .konbini-hero-search__result {
+    display: flex;
+    align-items: center;
+    gap: var(--k-space-2);
+    padding: var(--k-space-1) var(--k-space-2);
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .konbini-hero-search__result:hover {
+    background: var(--k-color-mist);
+  }
+
+  .konbini-hero-search__result img,
+  .konbini-hero-search__result-thumb {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--k-color-surface);
+    flex-shrink: 0;
+  }
+
+  .konbini-hero-search__result-title {
+    flex: 1;
+    font-size: 0.9375rem;
+  }
+
+  .konbini-hero-search__result-price {
+    font-size: 0.875rem;
+    color: color-mix(in oklab, currentColor 72%, transparent);
+    white-space: nowrap;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:konbini.names.hero_search",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:konbini.content.hero_search_info"
+    },
+    {
+      "type": "text",
+      "id": "popular_phrases",
+      "label": "t:konbini.settings.popular_phrases",
+      "info": "t:konbini.info.popular_phrases",
+      "default": "Matcha, Ramen, Zojirushi, Sos sojowy, Gochujang, Mochi"
+    },
+    {
+      "type": "range",
+      "id": "max_results",
+      "label": "t:konbini.settings.max_results",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "text",
+      "id": "seo_heading",
+      "label": "t:konbini.settings.seo_heading",
+      "info": "t:konbini.info.seo_heading",
+      "default": "KONBINI — Smaki Japonii i Korei"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        { "value": "page-width", "label": "t:options.page" },
+        { "value": "full-width", "label": "t:options.full" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:konbini.names.hero_search",
+      "category": "t:categories.custom"
+    }
+  ]
+}
+{% endschema %}

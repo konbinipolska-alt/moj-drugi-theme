@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "Murupolku",
       "home": "Etusivu"
+    },
+    "search": {
+      "popular": "Suositut haut"
     }
   }
 }

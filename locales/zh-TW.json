@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "導覽路徑",
       "home": "首頁"
+    },
+    "search": {
+      "popular": "熱門搜尋"
     }
   }
 }

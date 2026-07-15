@@ -354,6 +354,9 @@
     "breadcrumbs": {
       "label": "İçerik haritası",
       "home": "Ana sayfa"
+    },
+    "search": {
+      "popular": "Popüler aramalar"
     }
   }
 }

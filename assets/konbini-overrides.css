@@ -35,6 +35,17 @@
 }
 
 /* ---------------------------------------------------------------------
+   Layout: wide page width with generous desktop margins (client decision,
+   June session — full-width with ~120px margins).
+   --------------------------------------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .page-width-wide {
+    --page-margin: 120px;
+  }
+}
+
+/* ---------------------------------------------------------------------
    Header-bar extras (local store link + Spotify popover) — markup in
    snippets/konbini-nav-extras.liquid, fenced call in sections/header.liquid.
    --------------------------------------------------------------------- */

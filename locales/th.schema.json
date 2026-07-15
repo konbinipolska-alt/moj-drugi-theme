@@ -1161,7 +1161,8 @@
     "names": {
       "konbini_brand": "แบรนด์ KONBINI",
       "spotify": "KONBINI Spotify",
-      "local_store": "KONBINI local store"
+      "local_store": "KONBINI local store",
+      "hero_search": "KONBINI hero search"
     },
     "content": {
       "social_links": "โปรไฟล์โซเชียล",
@@ -1170,7 +1171,8 @@
       "local_store_info": "Address and hours are set once in Theme settings → KONBINI brand.",
       "local_store": "Local store",
       "local_store_settings_info": "Shared by the local-store blocks and LocalBusiness structured data.",
-      "spotify": "Spotify"
+      "spotify": "Spotify",
+      "hero_search_info": "Search-first store intro: giant predictive search with popular-phrase chips. No headings by design."
     },
     "settings": {
       "compact_player": "Compact player",
@@ -1182,13 +1184,18 @@
       "store_maps_url": "Map link (Google Maps)",
       "spotify_playlist": "Spotify playlist URL",
       "store_note": "Extra note",
-      "instant_load": "Load player immediately"
+      "instant_load": "Load player immediately",
+      "popular_phrases": "Popular phrases",
+      "max_results": "Max suggestions",
+      "seo_heading": "SEO heading (hidden)"
     },
     "info": {
       "store_hours": "One line per entry, e.g. “Mon–Fri 10–18”.",
       "spotify_playlist": "Full link to the playlist on open.spotify.com.",
       "store_note": "Shown under the hours, e.g. a pet-friendly note.",
-      "instant_load": "Embeds Spotify on page load instead of after a click. Adds third-party weight."
+      "instant_load": "Embeds Spotify on page load instead of after a click. Adds third-party weight.",
+      "popular_phrases": "Comma-separated, e.g. Matcha, Ramen, Zojirushi.",
+      "seo_heading": "Visually hidden H1 for SEO and screen readers."
     }
   }
 }
