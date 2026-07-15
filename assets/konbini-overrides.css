@@ -110,6 +110,54 @@
 }
 
 /* ---------------------------------------------------------------------
+   Japanese expression layer (client-approved direction)
+   --------------------------------------------------------------------- */
+
+/* kanji kicker inside shelf headings: <h3><em>茶</em> Title</h3> —
+   em is repurposed (richtext-safe), rendered as a quiet glyph */
+.section-resource-list__header h2 em,
+.section-resource-list__header h3 em {
+  font-style: normal;
+  color: color-mix(in oklab, var(--k-color-sumi) 30%, transparent);
+  margin-inline-end: 0.35em;
+}
+
+:lang(pl) .section-resource-list__header h2 em,
+:lang(pl) .section-resource-list__header h3 em {
+  font-family:
+    'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', Meiryo,
+    'Noto Sans JP', sans-serif;
+}
+
+/* quiet product shelves: media on a neutral tile + hairline under card */
+.card-gallery {
+  background: var(--k-color-surface);
+}
+
+/* scroll-driven fade-up reveal — CSS-only progressive enhancement
+   (Chromium today, harmless elsewhere); disabled for reduced motion */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .content-for-layout > .shopify-section {
+      animation: konbini-fade-up var(--k-duration-reveal) var(--k-ease-out) both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 28%;
+    }
+  }
+}
+
+@keyframes konbini-fade-up {
+  from {
+    opacity: 0.01;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------------
    Motion restraint — wabi-sabi micro-interactions use the shared easing.
    Respect users who opt out of motion.
    --------------------------------------------------------------------- */

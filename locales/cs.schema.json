@@ -1162,7 +1162,8 @@
       "konbini_brand": "Značka KONBINI",
       "spotify": "KONBINI Spotify",
       "local_store": "KONBINI local store",
-      "hero_search": "KONBINI hero search"
+      "hero_search": "KONBINI hero search",
+      "kanji": "KONBINI kanji accent"
     },
     "content": {
       "social_links": "Sociální profily",
@@ -1172,7 +1173,8 @@
       "local_store": "Local store",
       "local_store_settings_info": "Shared by the local-store blocks and LocalBusiness structured data.",
       "spotify": "Spotify",
-      "hero_search_info": "Search-first store intro: giant predictive search with popular-phrase chips. No headings by design."
+      "hero_search_info": "Search-first store intro: giant predictive search with popular-phrase chips. No headings by design.",
+      "kanji_info": "Decorative Japanese glyph (aria-hidden). Vertical = tategaki edge accent."
     },
     "settings": {
       "compact_player": "Compact player",
@@ -1187,7 +1189,9 @@
       "instant_load": "Load player immediately",
       "popular_phrases": "Popular phrases",
       "max_results": "Max suggestions",
-      "seo_heading": "SEO heading (hidden)"
+      "seo_heading": "SEO heading (hidden)",
+      "kanji_text": "Glyph or short text",
+      "kanji_vertical": "Vertical (tategaki)"
     },
     "info": {
       "store_hours": "One line per entry, e.g. “Mon–Fri 10–18”.",
