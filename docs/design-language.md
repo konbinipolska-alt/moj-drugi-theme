@@ -31,9 +31,9 @@ The few Japanese principles that actually drive interface decisions here:
 
 Reference coordinate: **Muji rigor × Pocari energy**, personality **between**
 playful cobalt+orange line-art (bakehouse / Миаград / Two Hands) and brutalist
-**micrographics** (Toyota exploded diagrams / 3.11LABS labels / Boring Studios
-invoices / Bill.). It is **not** muted wabi-sabi zen, **not** neon chaos, **not**
-warm editorial-serif.
+**micrographics** (3.11LABS technical labels / Boring Studios & Mixi invoices /
+Bill.). It is **not** muted wabi-sabi zen, **not** neon chaos, **not** warm
+editorial-serif.
 
 ---
 
