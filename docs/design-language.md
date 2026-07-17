@@ -153,14 +153,30 @@ What makes it unmistakably KONBINI:
   micrographics-style; not filled buttons.
 - **Inputs** — mix: large fields (hero search) underlined; functional forms
   (checkout / address) boxed 1px, 0 radius.
-- **Product card** — clean Muji: 1:1 image on white + name + price. No shadow,
-  no metadata on the shelf; catalogue/micrographics depth is on the PDP.
+- **Product card** — fixed structure, agreed with the client:
+  1. **packshot** (1:1, on white) — **nothing is ever laid on it**: no badges, no
+     price, no promo. The photograph is the asset.
+  2. **name** — always first, always **full width**, ~2 lines. Never in a row with
+     the price (long titles would fight it).
+  3. row: **`wariant · cena`** — variant left, price right. Size/weight lives here,
+     not in the name.
+  No SKU on the shelf; catalogue/micrographics depth belongs on the PDP.
+  Meta cells speak **one typographic voice** (mono, uppercase, tracked) — mixing a
+  mono code with a sans label reads as a bolted-on sticker, not a system.
+- **Origin** — from `konbini.origin_country`. Placement **[open]**: code above the
+  name (leading option), or a small round vector flag on the packshot (the one
+  sanctioned exception to rule 1). Flags are **flat vector 1:1 only** — use
+  circle-flags (MIT), inlined, with per-flag namespaced ids (they all ship
+  `id="a"` and would collide). **Never emoji** — Windows does not render flag emoji.
 - **Icons** — outline, ~1px stroke, 16×16 / 18×18. Katakana seal family separate.
-- **Availability** — minimal: only **dim out-of-stock**; no availability/urgency
-  badges.
-- **Promo / marketing badges** — sale −X% (orange field), new, bestseller,
-  limited, Yamamoto Selection. Product-attribute tags (vegan, spice, allergens)
-  come from Phase-5 metafields.
+- **Availability — one positive state.** There is no "wyprzedane" message. Both
+  out-of-stock and not-yet-launched products show
+  **`Niebawem dostępne — Powiadom mnie`**, with no variant, no price and no
+  dimming: a brief invitation, not a dead end. *Rule to confirm: apply only to
+  products that genuinely return; for discontinued items the card should leave the
+  shelf, otherwise we promise a restock that never comes.*
+- **Promo** — struck old price + new price in orange. **No `−X%` chip.**
+  Product-attribute tags (vegan, spice, allergens) come from Phase-5 metafields.
 - Full states (hover / active / focus / disabled) defined during build.
 
 ---
@@ -223,8 +239,15 @@ raise, not to improvise.
 ## Open (decided by specimen / later)
 
 - Typeface lock (IBM Plex vs alternates) — **[specimen]**
-- Exact orange hue — **[specimen]**
+- Exact orange hue (朱 `#E0451F` / warm `#EA5B24` / bright `#FF5C00`) — **[specimen]**
 - Display weight (bold ↔ medium) — **[specimen]**, tokenized
+- Origin placement on the card — **[open]** (see Components)
+- "Niebawem dostępne" scope: restocking items only? — **[open]**
+- Short **display name** metafield — the real product titles are long and dominate
+  the shelf; full title stays for SEO/search — **[phase 5]**
 - Line-art illustration system — directional base pending approval
 - Exact type scale ramp / tracking — **[specimen]**
-- Product-attribute tags, badge details — **[phase 5]**
+- Product-attribute tags — **[phase 5]**
+
+Review artifacts: [type/colour specimen](https://claude.ai/code/artifact/36b1e43d-edf9-4a3c-90e4-fce7a1645c5c) ·
+[product-card variants A–F, preview + wireframe](https://claude.ai/code/artifact/288a62a0-541d-402f-ae3c-d67d2e93eac9)
